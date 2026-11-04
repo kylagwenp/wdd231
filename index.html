@@ -25,7 +25,7 @@
     <header>
         <div class="brand">
             <img src="images/logo.svg" alt="" width="40" height="40">
-            <span>Kyla Gwen Papa</span>
+            <span>Chamber Site Torrance</span>
 
             <button type="button" id="menu-toggle" aria-label="Toggle main navigation" aria-controls="main-nav"
                 aria-expanded="false">
@@ -43,27 +43,37 @@
     </header>
 
     <main>
-        <section>
-            <h1>Home</h1>
-            <p>We are dedicated to promoting business growth and community development.</p>
-        </section>
+        <h1>Home</h1>
+
         <section>
             <h2>About Me</h2>
-            <p>I am a passionate advocate for local business growth and community development.</p>
+            <p>
+                Hi, I’m Kyla Gwen Papa from the Philippines. I’m studying
+                software development and learning to build responsive websites.
+                This page is where I’ll share my WDD 231 projects.
+            </p>
         </section>
+
         <section class="student-photo">
             <h2>Student Photo</h2>
             <img src="images/kyla.jpeg" alt="Kyla Gwen Papa">
         </section>
-        <section>
+
+        <section class="courses">
             <h2>Web Certificate Courses</h2>
-            <button>All</button>
-            <button>CSE</button>
-            <button>WDD</button>
+
+            <div class="course-filters" aria-label="Filter courses" role="group">
+                <button type="button" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" data-filter="CSE" aria-pressed="false">CSE</button>
+                <button type="button" data-filter="WDD" aria-pressed="false">WDD</button>
+            </div>
+
+            <div id="course-list" class="course-list"></div>
+            <p id="credit-total" aria-live="polite"></p>
         </section>
     </main>
+
     <footer>
-        <p>The total credits for course listed above is 6</p>
         <p>
             &copy; <span id="currentyear"></span>
             Kyla Gwen Papa | Philippines
