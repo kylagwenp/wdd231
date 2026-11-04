@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kyla Gwen Papa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="WDD 231 – Web Frontend Development by Kyla Gwen Papa. Course homepage featuring personal information, the Philippines, and web development resources.">
+
+    <title>WDD 231 – Web Frontend Development | Kyla Gwen Papa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/logo.svg" alt="" width="40" height="40">
+            <span>Kyla Gwen Papa</span>
+
+            <button type="button" id="menu-toggle" aria-label="Toggle main navigation" aria-controls="main-nav"
+                aria-expanded="false">
+                ☰
+            </button>
+        </div>
+
+        <nav id="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="./" aria-current="page">Home</a></li>
+                <li><a href="chamber/">Chamber</a></li>
+                <li><a href="final/">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Home</h1>
+            <p>We are dedicated to promoting business growth and community development.</p>
+        </section>
+        <section>
+            <h2>About Me</h2>
+            <p>I am a passionate advocate for local business growth and community development.</p>
+        </section>
+        <section class="student-photo">
+            <h2>Student Photo</h2>
+            <img src="images/kyla.jpeg" alt="Kyla Gwen Papa">
+        </section>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <button>All</button>
+            <button>CSE</button>
+            <button>WDD</button>
+        </section>
+    </main>
+    <footer>
+        <p>The total credits for course listed above is 6</p>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Kyla Gwen Papa | Philippines
+        </p>
+
+        <p>
+            Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>

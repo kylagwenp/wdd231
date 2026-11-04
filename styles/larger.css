@@ -1,0 +1,27 @@
+@media (min-width: 700px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    #main-nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+        align-items: stretch;
+    }
+
+    main>h1,
+    main>.courses {
+        grid-column: 1 / -1;
+    }
+
+    .course-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
