@@ -2,7 +2,7 @@ const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
 
-const apiKey = "PASTE_YOUR_KEY_HERE";
+const apiKey = "9c9c8b2c4fb4ae663cdd9f9130a10dd9";
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=metric&appid=${apiKey}`;
 
 async function apiFetch() {
