@@ -85,9 +85,15 @@ h3 { font-size: 1rem; }
 .site-footer a { color: var(--white); }
 .footer-inner { display: grid; gap: 1rem; }
 
-.hero { overflow: hidden; border-radius: .85rem; background: var(--navy); color: var(--white); }
-.hero-image { width: 100%; aspect-ratio: 2 / 1; object-fit: cover; }
-.hero-copy { padding: 1.2rem; }
+.hero { position: relative; overflow: hidden; border-radius: .85rem; background: var(--navy); color: var(--white); }
+.hero-image { width: 100%; aspect-ratio: 2 / 1; min-height: 18rem; object-fit: cover; }
+.hero-copy {
+    position: absolute;
+    inset: auto .75rem .75rem;
+    padding: .85rem;
+    border-radius: .65rem;
+    background: var(--navy);
+}
 .hero-copy h1 { color: inherit; }
 .hero-copy p { margin-block: .65rem 1rem; }
 .button {

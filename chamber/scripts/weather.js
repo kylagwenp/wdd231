@@ -31,10 +31,10 @@ async function getOpenWeather() {
     ]);
 
     const today = weatherDate.format(new Date(current.dt * 1000));
-    const highs = new Map();
+    const highs = new Map([[today, current.main.temp]]);
     for (const period of forecast.list) {
         const date = weatherDate.format(new Date(period.dt * 1000));
-        if (date > today) {
+        if (date >= today) {
             const previousHigh = highs.get(date) ?? -Infinity;
             highs.set(date, Math.max(previousHigh, period.main.temp_max));
         }
@@ -69,13 +69,13 @@ async function getOpenMeteo() {
         timezone: location.timeZone,
         current: "temperature_2m,weather_code",
         daily: "temperature_2m_max",
-        forecast_days: 4,
+        forecast_days: 3,
     });
     const { current, daily } = await fetchJson(`https://api.open-meteo.com/v1/forecast?${params}`);
     return {
         temperature: current.temperature_2m,
         description: meteoConditions[current.weather_code] ?? "Conditions unavailable",
-        days: daily.time.slice(1, 4).map((date, index) => [date, daily.temperature_2m_max[index + 1]]),
+        days: daily.time.slice(0, 3).map((date, index) => [date, daily.temperature_2m_max[index]]),
         provider: "Open-Meteo",
         source: "https://open-meteo.com/",
     };
@@ -110,10 +110,11 @@ export async function showWeather() {
 
         const days = document.createElement("dl");
         days.className = "forecast";
-        for (const [date, high] of data.days) {
+        for (const [index, [date, high]] of data.days.entries()) {
             const row = document.createElement("div");
             const label = document.createElement("dt");
-            label.textContent = weekday.format(new Date(`${date}T12:00:00Z`));
+            const day = weekday.format(new Date(`${date}T12:00:00Z`));
+            label.textContent = index === 0 ? `Today (${day})` : day;
             const value = document.createElement("dd");
             value.textContent = celsius.format(high);
             row.append(label, value);

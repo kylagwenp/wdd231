@@ -4,16 +4,11 @@
     #main-nav { flex-basis: auto; }
     #main-nav ul { display: flex; gap: .25rem; }
     main { padding-top: 1.5rem; }
-    .hero { position: relative; }
     .hero-image { min-height: 23rem; max-height: 31rem; }
     .hero-copy {
-        position: absolute;
-        bottom: 1.5rem;
-        left: 1.5rem;
+        inset: auto auto 1.5rem 1.5rem;
         max-width: min(28rem, calc(100% - 3rem));
         padding: 1.4rem 1.65rem;
-        border-radius: .65rem;
-        background: var(--navy);
     }
     .community-panels { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .events { grid-column: 1 / -1; }
