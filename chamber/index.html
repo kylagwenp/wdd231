@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kyla Gwen Papa">
+    <meta name="description" content="Explore the Tanay Chamber of Commerce in Rizal, including community events, local weather, and featured businesses.">
+    <meta property="og:title" content="Home | Tanay Chamber of Commerce">
+    <meta property="og:description" content="Explore the Tanay Chamber of Commerce in Rizal, including community events, local weather, and featured businesses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kylagwenp.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://kylagwenp.github.io/wdd231/chamber/images/tanay-social.jpg">
+    <meta property="og:image:alt" content="Rice fields in Tanay with the Pililla wind turbines in the distance">
+    <title>Home | Tanay Chamber of Commerce</title>
+    <link rel="icon" href="images/chamber-mark.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/site.js" defer></script>
+    <script type="module" src="scripts/home.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/chamber-mark.png" width="48" height="48" alt="">
+                <span><strong>Tanay</strong><span>Chamber of Commerce</span></span>
+            </a>
+            <button type="button" class="menu-toggle" id="menu-toggle" aria-controls="main-nav" aria-expanded="false">Menu</button>
+            <nav id="main-nav" aria-label="Main navigation">
+                <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="wrap">
+        <section class="hero" aria-labelledby="home-title">
+            <img class="hero-image" src="images/tanay-hero.webp" srcset="images/tanay-hero-small.webp 640w, images/tanay-hero.webp 1440w" sizes="(max-width: 70rem) calc(100vw - 2rem), 68rem" width="1440" height="720" alt="Rice fields in Tanay with the Pililla wind turbines along the ridgeline" fetchpriority="high">
+            <div class="hero-copy">
+                <h1 id="home-title">Tanay Chamber<br>of Commerce</h1>
+                <p>Meet the people behind Rizal’s local businesses.</p>
+                <a class="button button-light" href="join.html">Join the Chamber</a>
+            </div>
+        </section>
+        <p class="photo-credit">Photo by <a href="https://commons.wikimedia.org/wiki/File:Tanay_rice_field%2C_Pililla_wind_farm_view_%28Tanay%2C_Rizal%3B_08-14-2021%29.jpg">patrickroque01</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · Cropped</p>
+
+        <div class="community-panels">
+            <section class="panel events">
+                <h2>Community events</h2>
+                <article>
+                    <h3>Small Business Coffee Meetup</h3>
+                    <p class="event-time">First Friday of each month · 9:00 a.m.</p>
+                    <p>Meet fellow business owners and trade ideas over coffee in Tanay town proper.</p>
+                </article>
+                <article>
+                    <h3>Tanay Makers Market</h3>
+                    <p class="event-time">Third Saturday of each month · 8:00 a.m.</p>
+                    <p>Browse food, crafts, and other goods from Rizal entrepreneurs at the town plaza.</p>
+                </article>
+            </section>
+            <section class="panel">
+                <h2>Current weather</h2>
+                <p class="weather-location">Tanay, Rizal</p>
+                <div id="current-weather" aria-live="polite"><p>Loading current weather…</p></div>
+                <p class="weather-source" id="weather-source"></p>
+            </section>
+            <section class="panel">
+                <h2>Three-day forecast</h2>
+                <p class="weather-location">Daily high temperatures</p>
+                <div id="weather-forecast" aria-live="polite"><p>Loading forecast…</p></div>
+            </section>
+        </div>
+
+        <section class="member-section" aria-labelledby="spotlight-title">
+            <div class="section-heading">
+                <h2 id="spotlight-title">Member spotlights</h2>
+                <a href="directory.html">View the directory</a>
+            </div>
+            <p id="spotlight-status" role="status">Loading featured members…</p>
+            <div class="member-grid" id="spotlights"></div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <div>
+                <p><strong>Tanay Chamber of Commerce</strong></p>
+                <p>Tanay, Rizal, Philippines</p>
+                <p><a href="mailto:hello@tanaychamber.example">hello@tanaychamber.example</a></p>
+                <p>Student project · Sample listings and events</p>
+            </div>
+            <div>
+                <p>© <span id="current-year"></span> · Kyla Gwen Papa · WDD 231</p>
+                <p>Last modified <span id="last-modified"></span></p>
+                <p><a href="../index.html">Course homepage</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kyla Gwen Papa">
+    <meta name="description" content="Browse the Tanay Chamber of Commerce member directory in grid or list view.">
+    <meta property="og:title" content="Business Directory | Tanay Chamber of Commerce">
+    <meta property="og:description" content="Browse the Tanay Chamber of Commerce member directory in grid or list view.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kylagwenp.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://kylagwenp.github.io/wdd231/chamber/images/tanay-social.jpg">
+    <meta property="og:image:alt" content="Rice fields in Tanay with the Pililla wind turbines in the distance">
+    <title>Business Directory | Tanay Chamber of Commerce</title>
+    <link rel="icon" href="images/chamber-mark.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/site.js" defer></script>
+    <script type="module" src="scripts/directory.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/chamber-mark.png" width="48" height="48" alt="">
+                <span><strong>Tanay</strong><span>Chamber of Commerce</span></span>
+            </a>
+            <button type="button" class="menu-toggle" id="menu-toggle" aria-controls="main-nav" aria-expanded="false">Menu</button>
+            <nav id="main-nav" aria-label="Main navigation">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" aria-current="page">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="wrap">
+        <h1>Business directory</h1>
+        <p>Browse sample members of the Tanay Chamber of Commerce.</p>
+        <div class="view-controls" role="group" aria-label="Directory layout">
+            <button class="button" type="button" id="grid-view" aria-pressed="true" aria-controls="members">Grid</button>
+            <button class="button" type="button" id="list-view" aria-pressed="false" aria-controls="members">List</button>
+        </div>
+        <h2 class="directory-heading">Chamber members</h2>
+        <p id="directory-status" role="status">Loading members…</p>
+        <div class="member-grid" id="members"></div>
+    </main>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <div>
+                <p><strong>Tanay Chamber of Commerce</strong></p>
+                <p>Tanay, Rizal, Philippines</p>
+                <p><a href="mailto:hello@tanaychamber.example">hello@tanaychamber.example</a></p>
+                <p>Student project · Sample listings and events</p>
+            </div>
+            <div>
+                <p>© <span id="current-year"></span> · Kyla Gwen Papa · WDD 231</p>
+                <p>Last modified <span id="last-modified"></span></p>
+                <p><a href="../index.html">Course homepage</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

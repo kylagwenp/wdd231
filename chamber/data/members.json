@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Rizal Harvest Co.",
+        "address": "Sampaloc, Tanay, Rizal",
+        "phone": "+63 000 000 0001",
+        "website": "https://example.com/?business=rizal-harvest",
+        "image": "rizal-harvest.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Sierra Ridge Coffee",
+        "address": "Cuyambay, Tanay, Rizal",
+        "phone": "+63 000 000 0002",
+        "website": "https://example.com/?business=sierra-ridge",
+        "image": "sierra-ridge.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Tanay Trails Outfitters",
+        "address": "Daraitan, Tanay, Rizal",
+        "phone": "+63 000 000 0003",
+        "website": "https://example.com/?business=tanay-trails",
+        "image": "tanay-trails.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Lakeside Print Studio",
+        "address": "Katipunan-Bayani, Tanay, Rizal",
+        "phone": "+63 000 000 0004",
+        "website": "https://example.com/?business=lakeside-print",
+        "image": "lakeside-print.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Amihan Creative House",
+        "address": "Plaza Aldea, Tanay, Rizal",
+        "phone": "+63 000 000 0005",
+        "website": "https://example.com/?business=amihan-creative",
+        "image": "amihan-creative.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Poblacion Bakeshop",
+        "address": "Kaybuto, Tanay, Rizal",
+        "phone": "+63 000 000 0006",
+        "website": "https://example.com/?business=poblacion-bakeshop",
+        "image": "poblacion-bakeshop.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Bayan Community Cycles",
+        "address": "Pinagkamaligan, Tanay, Rizal",
+        "phone": "+63 000 000 0007",
+        "website": "https://example.com/?business=bayan-cycles",
+        "image": "bayan-cycles.png",
+        "membershipLevel": 1
+    }
+]
