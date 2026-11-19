@@ -1,1 +1,1 @@
-export const openWeatherKey = "";
+export const openWeatherKey = "9c9c8b2c4fb4ae663cdd9f9130a10dd9";
